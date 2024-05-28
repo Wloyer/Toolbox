@@ -1,0 +1,75 @@
+@import './variables.scss';
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primary-color;
+    padding: 0 20px;
+    height: 125px;
+
+    &__logo {
+        flex: 1;
+        margin-left: 20px;
+    }
+    &__title {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+
+        nav {
+            display: flex;
+            gap: 15px;
+
+            a {
+                color: $text-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+
+    .card {
+        background-color: white;
+        border: 2px solid $primary-color;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        &__title {
+            margin: 0 0 10px;
+        }
+
+        &__description {
+            margin: 0;
+        }
+    }
+}
+
