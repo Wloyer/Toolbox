@@ -1,15 +1,43 @@
 <template>
-  <div class="post-it">
-    <h2>Post-It Tool</h2>
-    <!-- Contenu spécifique à l'outil Post-it -->
-  </div>
+  <main class="home">
+    <TheCard
+        v-for="(tool, index) in tools"
+        :key="index"
+        :title="tool.title"
+        :description="tool.description"
+    />
+
+  </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import TheCard from '@/components/molecules/Card.vue'
+import {ref} from 'vue'
+
+const tools = ref([
+  {
+    title: 'Bloc note',
+    description: 'Outil pour prendre des notes'
+  },
+  {
+    title: 'Calcul de compte',
+    description: 'Outil pour faire des calculs financiers'
+  }
+])
 </script>
 
-<style scoped>
-.post-it {
-  padding: 20px;
+
+<style lang="scss" scoped>
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+
+  &__card {
+    flex: 1;
+    color: black;
+  }
 }
+
 </style>

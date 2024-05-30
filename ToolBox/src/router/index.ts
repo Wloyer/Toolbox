@@ -22,7 +22,7 @@ const router = createRouter({
             }
         },
        {
-            path: 'PostIt',
+            path: '/PostIt',
             name: 'PostIt',
             components: {
                 default: PostIt,
@@ -31,7 +31,7 @@ const router = createRouter({
             }
         },
         {
-            path: 'Calculator',
+            path: '/Calculator',
             name: 'Calculator',
             components: {
                 default: calculator,
