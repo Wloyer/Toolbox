@@ -7,8 +7,15 @@
       </div>
       <div class="header__wrapper">
         <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
+          <Button
+          title="Home"
+          type="danger"
+          shape:="square">
+            <RouterLink to="/">Home</RouterLink>
+          </Button>
+          <Button>
+            <RouterLink to="/about">About</RouterLink>
+          </Button>
         </nav>
       </div>
     </header>
@@ -16,7 +23,8 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink } from "vue-router";
+import {RouterLink} from "vue-router";
+import Button from '@/components/atoms/Button.vue'
 </script>
 
 <style scoped lang="scss">
@@ -32,12 +40,14 @@ import { RouterLink } from "vue-router";
     flex: 1;
     margin-left: 20px;
   }
+
   &__title {
     flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   &__wrapper {
     flex: 1;
     display: flex;
