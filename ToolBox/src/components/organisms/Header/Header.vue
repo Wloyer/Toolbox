@@ -11,10 +11,10 @@
           title="Home"
           type="danger"
           shape:="square">
-            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/PostIt">PostIt</RouterLink>
           </Button>
           <Button>
-            <RouterLink to="/about">About</RouterLink>
+            <RouterLink to="/Calculator">Calculator</RouterLink>
           </Button>
         </nav>
       </div>

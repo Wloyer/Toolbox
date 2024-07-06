@@ -41,7 +41,7 @@ const emitClick = event => {
 
 <style scoped>
 .btn-primary {
-  background-color: blue;
+  background-color: #FFA500;
   color: white;
 }
 
