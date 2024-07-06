@@ -1,11 +1,6 @@
 <template>
   <main class="home">
-    <TheCard
-        v-for="(tool, index) in tools"
-        :key="index"
-        :title="tool.title"
-        :description="tool.description"
-    />
+
 
   </main>
 </template>

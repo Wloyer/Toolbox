@@ -27,7 +27,6 @@
 
 <script setup lang="ts">
 import Button from '@/components/atoms/Button.vue'
-import {defineProps, ref} from 'vue';
 
 const props = defineProps({
   content: {
@@ -64,7 +63,7 @@ const deleteSelf = (postIt) => {
 };
 
 </script>
-<style scoped>
+<style lang="scss" scoped>
 
 .post-it {
   background-color: #FFA500;

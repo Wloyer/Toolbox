@@ -6,15 +6,13 @@
         :title="tool.title"
         :description="tool.description"
     />
-  <PostIt></PostIt>
+
   </main>
 </template>
 
 <script setup lang="ts">
 import TheCard from '@/components/molecules/Card.vue'
 import {ref} from 'vue'
-import PostIt from '@/components/molecules/PostIt.vue'
-
 
 const tools = ref([
   {

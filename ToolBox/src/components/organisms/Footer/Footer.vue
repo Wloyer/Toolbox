@@ -23,7 +23,7 @@
 <style lang="scss" scoped >
 @import '@/assets/styles/variables.scss';
 .footer {
-  background-color: $footer-color;
+  background-color: $primary-color;
   padding: 20px;
   text-align: center;
   position: fixed;

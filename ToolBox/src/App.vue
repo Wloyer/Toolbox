@@ -9,13 +9,12 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
-import DefaultHeader from '@/components/organisms/Header/Header.vue'
+import Header from '@/components/organisms/Header/Header.vue'
+import Footer from '@/components/organisms/Footer/Footer.vue'
 import PostItHeader from '@/components/organisms/Header/PostItHeader.vue'
-import CalculatorHeader from '@/components/organisms/Header/CalculatorHeader.vue'
-import DefaultFooter from '@/components/organisms/Footer/Footer.vue';
 import PostItFooter from '@/components/organisms/Footer/PostItFooter.vue'
-import  CalculatorFooter from '@/components/organisms/Footer/CalculatorFooter.vue'
-
+import CalculatorHeader from '@/components/organisms/Header/CalculatorHeader.vue'
+import CalculatorFooter from '@/components/organisms/Footer/CalculatorFooter.vue'
 const route = useRoute();
 
 const currentHeaderComponent = computed(() => {
@@ -25,7 +24,7 @@ const currentHeaderComponent = computed(() => {
     case 'Calculator':
       return CalculatorHeader;
     default:
-      return DefaultHeader;
+      return Header;
   }
 });
 
@@ -36,7 +35,7 @@ const currentFooterComponent = computed(() => {
       case 'Calculator':
       return CalculatorFooter;
     default:
-      return DefaultFooter;
+      return Footer;
   }
 });
 </script>

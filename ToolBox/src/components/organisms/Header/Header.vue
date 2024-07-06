@@ -32,7 +32,7 @@ import Button from '@/components/atoms/Button.vue'
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #FFA500;
+  background-color: $primary-color;
   padding: 0 20px;
   height: 125px;
 
